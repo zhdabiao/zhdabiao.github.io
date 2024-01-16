@@ -1,0 +1,943 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    list-style: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "mjfont1";
+    src: url("../fonts/mjfont1.woff2");
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+body {
+    font-family: "mjfont1";
+    background-color: #f9f5e9;
+    /* 普通指针样式*/
+    cursor: url(../fonts/Arrow.cur), default;
+}
+
+a:hover {
+    /** 链接指针样式**/
+    cursor: url(../fonts/Link\ Select.cur), pointer;
+}
+
+p:hover {
+    cursor: url(../fonts/Text.cur), text;
+}
+
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F2D7D5;
+    border-radius: 0 0 15vw 15vw;
+}
+
+.image {
+    width: 120px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 3;
+}
+
+.image img:nth-child(2) {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+.name p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    transition: font-size 1s linear 0s;
+}
+
+.lxfs {
+    margin: 20px auto;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: width 1s linear 0s;
+}
+
+.lxfs svg {
+    width: 60px;
+    height: 60px;
+}
+
+.qq {
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(0, 174, 255);
+}
+
+.qyweixin {
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.weibo {
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.kuaishou {
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(253, 119, 85);
+}
+
+.douyin {
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.pmd {
+    display: flex;
+    color: white;
+    margin: 10px auto;
+    width: 60%;
+    height: 40px;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.pmdicon {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.zimu {
+    flex: 1;
+    height: 40px;
+    line-height: 40px;
+}
+
+#pmd-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 3;
+}
+
+marquee {
+    height: 40px;
+    font-size: 20px;
+    line-height: 43px;
+}
+
+/* 悬浮卡片 */
+.xfkp {
+    position: fixed;
+    right: 120px;
+    bottom: 50px;
+    box-sizing: border-box;
+    padding: 18px 10px 22px 20px;
+    width: 400px;
+    height: 175px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-size: 130px;
+    box-shadow: 0px 0px 8px rgba(236, 59, 136, 0.35);
+    background-image: url("../images/loginee.png");
+    transition: right 1s linear 0s;
+    z-index: 3;
+    animation: myfirst 3s;
+    -webkit-animation: jinru 3s;
+}
+
+@keyframes jinru {
+    0% {
+        right: -500px;
+    }
+
+    100% {
+        right: 120px;
+    }
+}
+
+.biaoti {
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text {
+    margin: 15px 0;
+    color: rgb(255, 127, 227);
+}
+
+.zanzhu {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 10px;
+    background-color: #63ceff;
+}
+
+.zanzhu p {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.zanzhu p:hover {
+    cursor: url(../fonts/Link\ Select.cur), pointer;
+}
+
+.zanzhu a:hover {
+    color: rgb(247, 54, 86);
+}
+
+.xfkpgb {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.xfkpgb svg {
+    width: 30px;
+    height: 30px;
+    transform: rotate(0deg);
+    transition: transform 0.5s linear 0s;
+}
+
+.xfkpgb svg:hover {
+    transform: rotate(-720deg);
+}
+
+/* 右侧菜单栏 */
+.yccdl {
+    width: 50px;
+    height: 300px;
+    position: fixed;
+    right: 10px;
+    bottom: 200px;
+    z-index: 999;
+}
+
+.zhiding {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    animation: zhidingdh 2s;
+}
+
+.zhiding svg {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes zhidingdh {
+    0% {
+        bottom: -50px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+
+}
+
+/* 收款码 */
+.skm-box {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    right: 150px;
+    bottom: 300px;
+    width: 475px;
+    height: 175px;
+    padding: 3px 0 0 0;
+    padding-top: 38px;
+    background: url(../images/bg-cat-main.png) no-repeat top;
+    background-size: 100% auto;
+    transition: right 2s linear 0s;
+    animation: skmdh 2s;
+}
+
+@keyframes skmdh {
+    0% {
+        right: -500px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 150px;
+        opacity: 1;
+    }
+}
+
+.skm {
+    width: 475px;
+    height: 190px;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #FFB5C3;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: inset 0 5px 25px 0 #FFD1D8;
+}
+
+.skm-img-p {
+    width: 400px;
+    height: 175px;
+    cursor: default;
+}
+
+.skm-img-p img {
+    width: 150px;
+    height: 150px;
+}
+
+.skm-img-p p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.skm svg {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.5s linear 0s;
+}
+
+.skm svg:hover {
+    transform: rotate(-720deg);
+}
+
+.main-top {
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    top: -40px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #63ceff;
+}
+
+.kapian {
+    padding: 10px;
+    width: 25%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #FFB5C3;
+}
+
+.title {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zd {
+    display: flex;
+    align-items: center;
+}
+
+.zd img {
+    width: 40px;
+    padding-bottom: 10px;
+}
+
+.title h2 {
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title-icon img {
+    width: 100%;
+
+}
+
+#title-icon1 img {
+    transform: rotateX(180deg);
+}
+
+.sangedian {
+    display: flex;
+}
+
+.sangedian span {
+    display: block;
+    border-radius: 50%;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.sangedian span:nth-child(1) {
+    background-color: #F7CAC9;
+}
+
+.sangedian span:nth-child(2) {
+    background-color: #fa7ee3;
+}
+
+.sangedian span:nth-child(3) {
+    background-color: #00BFFF;
+}
+
+.zhandian-box {
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    background-color: rgba(204, 238, 252, 0.733);
+}
+
+.zhandian-list {
+    margin: 20px auto;
+    margin-top: 50px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    overflow: hidden;
+}
+
+.zhandian {
+    height: 100px;
+}
+
+.zhandian a {
+    color: #f6b93b;
+    font-size: 30px;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    background-color: #ffffff70;
+    background-image: linear-gradient(180deg, #FFF2EF 0%, #FFFFFF 30%);
+    box-shadow: inset 0 1px 4px 0 #FFD1D8;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.zhandian a:hover {
+    background-image: linear-gradient(180deg, #FFF2EF 0%, #fbc2eb 30%);
+    box-shadow: inset 0 1px 4px 0 #fff;
+    color: #fff;
+}
+
+/* 团队成员 */
+.tdcy {
+    position: relative;
+}
+
+.rwt {
+    width: 100%;
+    position: absolute;
+    top: -110px;
+    z-index: -1;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.rwt img {
+    height: 500px;
+    width: auto;
+}
+
+.tdcybt {
+    margin: 50px auto;
+    width: 250px;
+    text-align: center;
+    background: url(../images/bg-category.png) no-repeat top;
+    background-size: 100% 100%;
+}
+
+.tdcybt h3 {
+    height: 100px;
+    line-height: 120px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tab {
+    width: 90%;
+    margin: auto;
+}
+
+.tab ul {
+    width: 100%;
+    height: 100px;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab ul li {
+    margin: 0 30px;
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.tab ul li.active {
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #fff;
+    animation: myfirst 1s;
+    -webkit-animation: ani 2s linear infinite;
+}
+
+@keyframes ani {
+    0% {
+        box-shadow: 0 0 0px #FFC0CB
+    }
+
+    25% {
+        box-shadow: 0 0 20px #FFC0CB
+    }
+
+    50% {
+        box-shadow: 0 0 30px #00FFFF
+    }
+
+    75% {
+        box-shadow: 0 0 40px #7FFF7F
+    }
+
+    100% {
+        box-shadow: 0 0 0px #ff8329
+    }
+}
+
+.tablinks img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #fcfcfc;
+}
+
+.tabcontent {
+    overflow: hidden;
+}
+
+.tabcontent {
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.cy-top {
+    display: flex;
+}
+
+.cytp {
+    width: 69%;
+    margin-right: 1%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 16/ 1;
+    background-color: #ffffff;
+}
+
+.cytp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cyxx {
+    overflow: hidden;
+    width: 30%;
+    padding: 20px;
+    aspect-ratio: 1 / 1;
+    background-color: #f98787;
+    border-radius: 20px;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.cyxxbj {
+    height: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cyxxbj img {
+    width: 100%;
+    height: 100%;
+}
+
+.cyxx p,
+.cyxx p b {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.cyxx p b {
+    font-size: 25px;
+}
+
+.cyxx span {
+    padding: 5px;
+    text-align: center;
+    background-color: #00BFFF;
+}
+
+.biaoqiantext b {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.biaoqian {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.biaoqiantext {
+    white-space: nowrap;
+}
+
+.biaoqian1 {
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#bq1 {
+    background-color: #F2D7D5;
+}
+
+#bq2 {
+    background-color: #A2D9CE;
+}
+
+#bq3 {
+    background-color: #F2E8C4;
+}
+
+.yqlj {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 90%;
+    background-color: #A0E8AF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.yqljtitle {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+    display: flex;
+}
+
+.yqljtitle p {
+    margin: 0 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.yqljtitle svg {
+    width: 40px;
+    height: 40px;
+}
+
+.yqlj a {
+    color: #000;
+    font-weight: bold;
+    margin-right: 10px;
+    line-height: 2;
+}
+
+.yqlj a:hover {
+    color: #FF69B4;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #A2D5F2
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.dbbq {
+    display: flex;
+    justify-content: center;
+}
+
+.dbbq a {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 10px;
+    text-align: center;
+    color: #000;
+    margin: 0 10px;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+}
+
+.dbbq a:hover {
+    color: #fff;
+}
+
+.dbbq a svg {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle
+}
+
+.bqbaxx p {
+    text-align: center;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+    .biaoqian1 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cytp {
+        width: 50%;
+    }
+
+    .cyxx {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .zhandian-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .zhandian a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .zhandian-list {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .lxfs {
+        margin: 10px auto;
+        width: 90%;
+        height: 50px;
+        transition: width 1s linear 0s;
+    }
+
+    .lxfs svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .qq,
+    .qyweixin,
+    .weibo,
+    .kuaishou,
+    .douyin {
+        height: 40px;
+    }
+
+    .name p {
+        font-size: 20px;
+        transition: font-size 1s linear 0s;
+    }
+
+    .pmd {
+        width: 70%;
+        height: 30px;
+    }
+
+    .pmdicon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .zimu {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #pmd-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    marquee {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .kapian {
+        width: 50%;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .sangedian span {
+        width: 20px;
+        height: 20px;
+    }
+
+    .zhandian-box {
+        padding: 10px;
+    }
+
+    .zd img {
+        padding-bottom: 15px;
+    }
+
+    .cy-top {
+        display: block;
+    }
+
+    .cytp {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .cyxx {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .tab ul li {
+        margin: 0 10px;
+    }
+
+    .tab ul {
+        padding: 20px 0;
+    }
+
+    .tdcybt h3 {
+        font-size: 20px;
+        height: 70px;
+        line-height: 90px;
+    }
+
+    .tdcybt {
+        width: 190px;
+        margin: 30px auto;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .dbbq a {
+        font-size: 15px;
+        padding: 0;
+        margin: 0 2px;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .xfkp {
+        display: none;
+        right: -500px;
+        transition: right 1s linear 0s;
+    }
+
+    .skm-box {
+        right: -500px;
+        transition: right 2s linear 0s;
+    }
+
+    .yccdl {
+        bottom: 50px;
+    }
+}
