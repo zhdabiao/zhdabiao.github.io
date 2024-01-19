@@ -33,15 +33,9 @@ let config = {
     FREQ_RANGE: 8,
 }
 
-var timer = setInterval(randomSplat, 3500);
+var timer = setInterval(_randomSplats, 3500);
 var _runRandom = true;
 var _isSleep = false;
-function randomSplat()
-{
-    if(_runRandom == true && _isSleep == false && _randomSplats)
-        splatStack.push(parseInt(Math.random() * 20) + 5);
-}
-
 //lively is minimizing browser window to pause.
 //this wont obviously work once I implement proper pause -> todo:- do not call livelyAudioListener() when paused/minimized.
 document.addEventListener("visibilitychange", function() {
@@ -1714,3 +1708,17 @@ function hashCode (s) {
     }
     return hash;
 };
+
+
+
+
+
+//=======================================================================================================
+    //声明:
+    //本网页源码来自互联网,如有侵权,请在GitHub联系我!
+    //希望如下信息能帮助到你:
+    //提供页面主体源代码来自https://www.xiaomyun.com/
+    //提供页面背景源代码来自https://jsrun.net/
+    //同时感谢jsrun站长的鼓励,不然我这个缝合怪说不定就做不出来,谢谢站长
+    //data:19/01/2024                                                      张大彪丨zhdabiao
+ //======================================================================================================

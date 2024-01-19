@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
 #can{
     position: absolute;
     z-index:10;
 }
+
 #aaa {
     position: absolute;
     z-index:200;
 }
+
 body{
     background: #f7f7f7;
 }
@@ -33,12 +36,12 @@ a{
 	-moz-user-focus: none;
     -moz-user-select: none;
     text-decoration:none;
-    color:#ffffff;
+    color:#992b2b60;
 }
 
 .mian{
-    width: 45%;
-    background: rgb(255, 255, 255);
+    width: 44%;
+    background: rgba(255, 255, 255, 0.5);
     margin-top: 60px;
     border-radius: 10px;
     display: flex;
@@ -47,13 +50,13 @@ a{
     transition:all 0.5s;
 }
 
-
 .main-top{
     width: 90%;
     display: flex;
     flex-direction: column;
     /* background: chartreuse; */
 }
+
 .main-bot{
     width: 90%;
     display: flex;
@@ -62,7 +65,7 @@ a{
 }
 
 .main-top-title{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -82,13 +85,12 @@ a{
     border-radius: 10px;
     object-fit: cover;
 }
-
-
 /* 简介 */
 .main-top-Brief{
     width: 100%;
     margin-top: 10px;
 }
+
 .main-top-Brief>p{
     /* color: rgba(34,47,62,0.4); */
     color: #637792;
@@ -96,13 +98,12 @@ a{
     margin-top: 5px;
     margin-right: 10px;
 }
-
-
 /* 图标 */
 .main-bot-tb{
     width: 100%;
     display: flex;
 }
+
 .main-bot-tb>a{
     width: 45px;
     height: 45px;
@@ -111,29 +112,26 @@ a{
     align-items: center;
     border-radius: 10px;
 }
+
 .main-bot-tb>a>i{
     font-size: 22px;
     color: #8095b1;
     transition:all 0.15s;
 }
+
 .main-bot-tb-1{
     margin-left: -10px;
 }
-
-
-
 /* 二标题 */
 .main-bot-title{
     width: 100%;
     margin-top: 10px;
 }
+
 .main-bot-title>h3{
     /* color: rgb(38, 52, 66); */
     color: #0a274d;
 }
-
-
-
 /* 内容 */
 .main-bot-nr{
     width: 100%;
@@ -144,6 +142,7 @@ a{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .main-bot-nr-kp{
     width: 100%;
     min-height: 80px;
@@ -152,6 +151,7 @@ a{
     align-items: center;
     /* background: chartreuse; */
 }
+
 .main-bot-nr-kp-k{
     width: 100%;
     min-height: 80px;
@@ -161,7 +161,6 @@ a{
     /* background: chocolate;  */
     border-radius: 10px;
 }
-
 /* 图片 */
 .main-bot-nr-kp-k-img{
     min-height: 80px;
@@ -172,8 +171,8 @@ a{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     /* background: cornflowerblue; */
-
 }
+
 .main-bot-nr-kp-k-img>img{
     width: 60px;
     height: 60px;
@@ -184,14 +183,13 @@ a{
     margin-left: 10px;
 }
 
-
-
 .main-bot-nr-kp-k-n{
     /* background: crimson; */
     margin-left: 20px;
     display: flex;
     flex-direction: column;
 }
+
 .p1{
     font-size: 18px;
     /* color: rgb(38, 52, 66); */
@@ -199,6 +197,7 @@ a{
     font-weight: bold;
     margin-right: 10px;
 }
+
 .p2{
     font-size: 14px;
     /* color: #1c3952; */
@@ -206,11 +205,6 @@ a{
     margin-top: 5px;
     margin-right: 10px;
 }
-
-
-
-
-
 /* 版权 */
 .footer {
     /*position: absolute;*/
@@ -219,35 +213,14 @@ a{
     width: 100%;
     text-align: center;
     font-size: 12px;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.5);
     padding: 10px 0;
     margin-top: 20px;
 }
+
 .footer-link{
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.5);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 动画区 */
 .main-bot-tb-1>i:hover{
     transform:scale(1.2);
@@ -267,11 +240,6 @@ a{
 }
 
 
-
-
-
-
-
 .main-bot-nr-kp:hover .kkk{
     transform: scale(1.5);
     width: 90px;
@@ -281,29 +249,27 @@ a{
 }
 
 
-
-
-
-
-
 @media screen and (max-width:1500px) {
 .mian{
     width: 65%;
 }
 
 }
+
 @media screen and (max-width:1150px) {
     .mian{
         width: 75%;
     }
     
 }
+
 @media screen and (max-width:1000px) {
     .mian{
         width: 85%;
     }
     
 }
+
 @media screen and (max-width:888px) {
     .mian{
         width: 100%;
@@ -313,3 +279,17 @@ a{
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+
+/* =======================================================================================================
+    声明:
+    本网页源码来自互联网,如有侵权,请在GitHub联系我!
+    希望如下信息能帮助到你:
+    提供页面主体源代码来自https://www.xiaomyun.com/
+    提供页面背景源代码来自https://jsrun.net/
+    同时感谢jsrun站长的鼓励,不然我这个缝合怪说不定就做不出来,谢谢站长
+    data:19/01/2024                                                             张大彪丨zhdabiao
+ =======================================================================================================*/
