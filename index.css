@@ -36,11 +36,11 @@ a{
 	-moz-user-focus: none;
     -moz-user-select: none;
     text-decoration:none;
-    color:#992b2b60;
+    color:#ffffff;
 }
 
 .mian{
-    width: 44%;
+    width: 45%;
     background: rgba(255, 255, 255, 0.5);
     margin-top: 60px;
     border-radius: 10px;
@@ -65,7 +65,7 @@ a{
 }
 
 .main-top-title{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -93,7 +93,7 @@ a{
 
 .main-top-Brief>p{
     /* color: rgba(34,47,62,0.4); */
-    color: #637792;
+    color: #404e61;
     font-size: 14px;
     margin-top: 5px;
     margin-right: 10px;
@@ -115,7 +115,7 @@ a{
 
 .main-bot-tb>a>i{
     font-size: 22px;
-    color: #8095b1;
+    color: #617083;
     transition:all 0.15s;
 }
 
@@ -130,7 +130,7 @@ a{
 
 .main-bot-title>h3{
     /* color: rgb(38, 52, 66); */
-    color: #0a274d;
+    color: #182d49;
 }
 /* 内容 */
 .main-bot-nr{
@@ -201,7 +201,7 @@ a{
 .p2{
     font-size: 14px;
     /* color: #1c3952; */
-    color: #637792;
+    color: #4b5a6e;
     margin-top: 5px;
     margin-right: 10px;
 }
@@ -284,12 +284,14 @@ a{
 
 
 
-/* =======================================================================================================
-    声明:
-    本网页源码来自互联网,如有侵权,请在GitHub联系我!
-    希望如下信息能帮助到你:
-    提供页面主体源代码来自https://www.xiaomyun.com/
-    提供页面背景源代码来自https://jsrun.net/
-    同时感谢jsrun站长的鼓励,不然我这个缝合怪说不定就做不出来,谢谢站长
-    data:19/01/2024                                                             张大彪丨zhdabiao
- =======================================================================================================*/
+/* =========================================================================
+丨   声明:
+丨 本网页源码来自互联网,如有侵权,请在GitHub联系我!
+丨 希望如下信息能帮助到你:
+丨 提供页面主体源代码来自https://www.xiaomyun.com/
+丨 提供页面背景源代码来自https://jsrun.net/
+丨 同时感谢jsrun站长的鼓励,不然我这个缝合怪说不定就做不出来,谢谢站长
+丨   张大彪丨zhdabiao
+丨   data:19/01/2024
+丨   https://github.com/zhdabiao/zhdabiao.github.io
+=============================================================================*/
