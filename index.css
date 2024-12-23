@@ -32,9 +32,8 @@ body{
 a{
     z-index:10;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    -webkit-user-select:none;
+    -user-select:none;
 	-moz-user-focus: none;
-    -moz-user-select: none;
     text-decoration:none;
     color:#ffffff;
 }
@@ -280,8 +279,16 @@ a{
     }
 }
 
-
-
+@media screen and (max-width: 600px) and (min-device-pixel-ratio: 2), 
+       screen and (max-width: 600px) and (min-resolution: 192dpi) {
+        .mian{
+            width: 90%;
+            margin-top: 0px;
+        }
+        .main-bot-nr{
+            grid-template-columns: 1fr;
+        }
+    }
 
 
 /* =========================================================================
