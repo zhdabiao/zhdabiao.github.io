@@ -279,10 +279,9 @@ a{
     }
 }
 
-@media screen and (min-device-pixel-ratio: 2), 
-       screen and (min-resolution: 300dpi) {
+@media screen and (min-device-pixel-ratio: 2) and (min-resolution: 300dpi) {
         .mian{
-            width: 90%;
+            width: 100%;
             margin-top: 0px;
         }
         .main-bot-nr{
