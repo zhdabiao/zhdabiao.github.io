@@ -279,8 +279,8 @@ a{
     }
 }
 
-@media screen and (max-width: 600px) and (min-device-pixel-ratio: 2), 
-       screen and (max-width: 600px) and (min-resolution: 192dpi) {
+@media screen and (min-device-pixel-ratio: 2), 
+       screen and (min-resolution: 300dpi) {
         .mian{
             width: 90%;
             margin-top: 0px;
