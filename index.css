@@ -17,7 +17,7 @@ body{
     background: #f7f7f7;
 }
 /* 主体 */
-.centent{
+.content{
     z-index:10;
     position: absolute;
     width: 100vw;
@@ -278,17 +278,6 @@ a{
         grid-template-columns: 1fr;
     }
 }
-
-@media screen and (min-resolution: 300dpi) {
-    .mian{
-        width: 100%;
-        margin-top: 0px;
-    }
-    .main-bot-nr{
-        grid-template-columns: 1fr;
-    }
-}
-
 
 /* =========================================================================
 丨   声明:
